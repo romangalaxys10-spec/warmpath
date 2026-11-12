@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "warmpath": {
+      "command": "relate",
+      "args": ["serve", "--mcp", "stdio", "--database", "./data/warmpath.rl", "--read-only"]
+    }
+  }
+}

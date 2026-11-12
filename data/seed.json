@@ -1,0 +1,85 @@
+{
+ "owners": [{"key": "northlight", "name": "Northlight Labs"}],
+ "brands": [
+  {"key": "qa", "owner": "northlight", "name": "Northlight QA", "domain": "qa.example"},
+  {"key": "host", "owner": "northlight", "name": "Northlight Hosting", "domain": "host.example"}
+ ],
+ "companies": [
+  {"key": "pixelforge", "name": "Pixelforge Studio", "country": "AE", "site": "pixelforge.example", "kind": "web app studio"},
+  {"key": "bluecanal", "name": "Blue Canal Apps", "country": "AE", "site": "bluecanal.example", "kind": "mobile + web app studio"},
+  {"key": "dunelab", "name": "Dune Lab", "country": "AE", "site": "dunelab.example", "kind": "SaaS dev shop"},
+  {"key": "cedarbyte", "name": "Cedarbyte", "country": "AE", "site": "cedarbyte.example", "kind": "Shopify theme shop"},
+  {"key": "harborstack", "name": "Harborstack", "country": "US", "site": "harborstack.example", "kind": "web app studio"},
+  {"key": "palmcode", "name": "Palmcode", "country": "US", "site": "palmcode.example", "kind": "fintech app studio"},
+  {"key": "orangegrove", "name": "Orange Grove Digital", "country": "US", "site": "orangegrove.example", "kind": "WordPress agency"},
+  {"key": "maplegrid", "name": "Maplegrid", "country": "CA", "site": "maplegrid.example", "kind": "web app studio"},
+  {"key": "northbeam", "name": "Northbeam Software", "country": "CA", "site": "northbeam.example", "kind": "B2B SaaS studio"},
+  {"key": "lakeside", "name": "Lakeside Interactive", "country": "CA", "site": "lakeside.example", "kind": "game + web studio"},
+  {"key": "tidewater", "name": "Tidewater Apps", "country": "US", "site": "tidewater.example", "kind": "healthcare web apps"},
+  {"key": "saltpine", "name": "Saltpine", "country": "AE", "site": "saltpine.example", "kind": "e-commerce web apps"}
+ ],
+ "people": [
+  {"key": "rom", "name": "Roman (founder)", "role": "founder"},
+  {"key": "maya", "name": "Maya (partner)", "role": "co-founder"},
+  {"key": "omar", "name": "Omar Haddad", "role": "founder", "company": "pixelforge"},
+  {"key": "lina", "name": "Lina Saeed", "role": "CTO", "company": "pixelforge"},
+  {"key": "farah", "name": "Farah Nouri", "role": "founder", "company": "bluecanal"},
+  {"key": "karim", "name": "Karim Aziz", "role": "head of QA", "company": "bluecanal"},
+  {"key": "yusuf", "name": "Yusuf Tahir", "role": "founder", "company": "dunelab"},
+  {"key": "nadia", "name": "Nadia Qasim", "role": "owner", "company": "cedarbyte"},
+  {"key": "ethan", "name": "Ethan Brooks", "role": "founder", "company": "harborstack"},
+  {"key": "sofia", "name": "Sofia Ramos", "role": "CTO", "company": "palmcode"},
+  {"key": "diego", "name": "Diego Alvarez", "role": "founder", "company": "palmcode"},
+  {"key": "grace", "name": "Grace Kim", "role": "owner", "company": "orangegrove"},
+  {"key": "liam", "name": "Liam Chen", "role": "founder", "company": "maplegrid"},
+  {"key": "zoe", "name": "Zoe Martin", "role": "CEO", "company": "northbeam"},
+  {"key": "noah", "name": "Noah Tremblay", "role": "founder", "company": "lakeside"},
+  {"key": "ava", "name": "Ava Patel", "role": "founder", "company": "tidewater"},
+  {"key": "sami", "name": "Sami Rahal", "role": "founder", "company": "saltpine"}
+ ],
+ "knows": [
+  ["rom", "ethan", "worked together 2021"],
+  ["maya", "zoe", "same accelerator batch"],
+  ["zoe", "noah", "co-organise a Toronto meetup"],
+  ["rom", "maya", "co-founders"],
+  ["omar", "sami", "former colleagues"]
+ ],
+ "teams": [
+  {"key": "team-a", "name": "Team A (email)", "backedBy": "rom", "brand": "qa"},
+  {"key": "team-b", "name": "Team B (WhatsApp)", "backedBy": "maya", "brand": "host"}
+ ],
+ "agents": [
+  {"key": "scout-a", "name": "Scout-A", "role": "finds and researches prospects", "team": "team-a"},
+  {"key": "writer-a", "name": "Writer-A", "role": "writes and sends", "team": "team-a"},
+  {"key": "scout-b", "name": "Scout-B", "role": "finds and researches prospects", "team": "team-b"},
+  {"key": "writer-b", "name": "Writer-B", "role": "writes and sends", "team": "team-b"}
+ ],
+ "touches": [
+  {"id": "t1", "agent": "writer-b", "person": "lina", "brand": "host", "channel": "WhatsApp", "at": "2026-11-05T10:12:00Z",
+   "text": "Hi Lina, saw Pixelforge ships client dashboards on Next.js. Want a free hosting audit?"},
+  {"id": "t2", "agent": "writer-a", "person": "diego", "brand": "qa", "channel": "email", "at": "2026-10-28T08:00:00Z",
+   "text": "Diego, Palmcode's checkout has three payment flows. We can test all of them from just the URL.",
+   "reply": {"sentiment": "no", "at": "2026-10-29T09:30:00Z", "text": "Not interested, we have an in-house QA team."}},
+  {"id": "t3", "agent": "writer-b", "person": "karim", "brand": "host", "channel": "WhatsApp", "at": "2026-11-02T14:00:00Z",
+   "text": "Karim, Blue Canal's apps load from one region. Want a look at edge hosting?"},
+  {"id": "t4", "agent": "writer-a", "person": "liam", "brand": "qa", "channel": "email", "at": "2026-09-20T09:00:00Z",
+   "text": "Liam, Maplegrid's booking app has a long signup. Free end-to-end test run?"}
+ ],
+ "optouts": [
+  {"person": "karim", "brand": "host", "at": "2026-11-03T08:10:00Z"}
+ ],
+ "notes": [
+  {"id": "n1", "agent": "scout-a", "company": "pixelforge", "at": "2026-11-10T09:00:00Z", "text": "Builds client web apps and dashboards; ships every two weeks; no QA role on the careers page."},
+  {"id": "n2", "agent": "scout-a", "company": "bluecanal", "at": "2026-11-10T09:05:00Z", "text": "Mobile and web app studio, 25 people, recently launched a banking app with complex onboarding forms."},
+  {"id": "n3", "agent": "scout-a", "company": "dunelab", "at": "2026-11-10T09:10:00Z", "text": "Small SaaS dev shop; their invoicing product has multi-step payment forms and frequent releases."},
+  {"id": "n4", "agent": "scout-a", "company": "cedarbyte", "at": "2026-11-10T09:15:00Z", "text": "Sells Shopify themes; mostly static storefront templates."},
+  {"id": "n5", "agent": "scout-a", "company": "harborstack", "at": "2026-11-10T09:20:00Z", "text": "Web app studio building customer portals with login, billing and file uploads."},
+  {"id": "n6", "agent": "scout-a", "company": "palmcode", "at": "2026-11-10T09:25:00Z", "text": "Fintech app studio; checkout and payment flows for neobanks."},
+  {"id": "n7", "agent": "scout-a", "company": "orangegrove", "at": "2026-11-10T09:30:00Z", "text": "WordPress marketing sites for local businesses."},
+  {"id": "n8", "agent": "scout-a", "company": "maplegrid", "at": "2026-11-10T09:35:00Z", "text": "Web app studio; booking and scheduling apps with long signup and payment steps."},
+  {"id": "n9", "agent": "scout-a", "company": "northbeam", "at": "2026-11-10T09:40:00Z", "text": "B2B SaaS studio; builds admin consoles and onboarding wizards, weekly deploys, small team."},
+  {"id": "n10", "agent": "scout-a", "company": "lakeside", "at": "2026-11-10T09:45:00Z", "text": "Game studio that also builds web companion apps with account sign-up and in-app purchases."},
+  {"id": "n11", "agent": "scout-a", "company": "tidewater", "at": "2026-11-10T09:50:00Z", "text": "Healthcare web apps: patient intake forms, appointment booking, payments."},
+  {"id": "n12", "agent": "scout-a", "company": "saltpine", "at": "2026-11-10T09:55:00Z", "text": "Custom e-commerce web apps with cart, checkout and payment gateway integrations."}
+ ]
+}
