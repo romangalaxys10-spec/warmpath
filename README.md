@@ -21,7 +21,7 @@ Every one of those answers needs connected context: a colleague at the same comp
 Needs Python 3.10+ on macOS or Linux.
 
 ```bash
-git clone <this repo> warmpath && cd warmpath
+git clone https://github.com/romangalaxys10-spec/warmpath.git && cd warmpath
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python -m warmpath demo          # the five-step story from the video
