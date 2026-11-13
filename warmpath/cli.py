@@ -26,7 +26,7 @@ def main(argv=None):
         from .seed import build; print(build(a.db)); return
     if a.cmd == "demo":
         from .demo import run; run(a.db); return
-    with graph.connect(a.db) as c:
+    with graph.connect(a.db, read_only=a.cmd in ("check", "find")) as c:
         if a.cmd == "check":
             v = graph.can_contact(c, a.agent, a.person, a.brand)
             print(json.dumps({"decision": v.decision, "reasons": v.reasons, "warm_path": v.warm_path}, indent=2))
